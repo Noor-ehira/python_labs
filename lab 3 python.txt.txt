@@ -1,0 +1,152 @@
+LAB-3 ..................PYTHON (AI)
+
+#print number which are divisible by 5 and 7
+'''for i in range(1500,2701):
+    if((i%7==0) and (i%5==0)):
+        print(i)
+'''
+#convert temperature in celcius and faranhite        
+'''x=input("enter a temperature:")   
+t=input("enter type:")    
+x=int(x) 
+if(t=='c'):
+  f=(x*(9/5)+32)
+  print(f)
+else:
+    c=((x-32)*(5/9))
+    print(c)'''
+ 
+#print pattern
+'''for i in range(1,6):
+    for j in range (i):
+     print("*",end='')
+    print()     
+
+for i in range(4,0,-1):
+    for j in range(i):
+        print("*", end='')  
+    print()    '''
+    
+#Input from  user and reverse it
+'''n=input("enter a word: ")
+for i in range (len(n)-1,-1,-1):
+    print(n[i],end='');
+    '''
+#print even or add from number series
+'''numbers=[]
+e=0
+o=0
+numbers=input("enter series of numbers.")
+for i in range(len(numbers)): 
+    if(int(numbers[i])%2==0):
+        e=e+1
+    if(int(numbers[i])%2==1):    
+        o=o+1
+print("even numbers are " ,e,"\n odd numbers are ",o)  '''    
+
+#print data with its datatype 
+'''data=[12,23.4,"noor",True,'z',1+2j]
+for i in range(len(data)):
+    print(data[i], type(data[i]))
+    
+data=[]    
+n=input("enter length of a list")
+for i in range(int(n)):
+    d=input("enter a element in list :")
+    data.append(d)
+print(data)  
+for i in range(len(data)):
+    print(data[i],type(data[i]))  '''
+
+#print numbers except 3,6
+
+'''for i in range(7):    
+    if (i!=3 and i!=6):
+      print(i)
+    continue '''     
+
+#print febnocci numbers
+'''a=0
+b=1
+print(a ,"\n",b)
+c=a+b
+print(c)
+while(c<50):
+  a=b
+  b=c
+  c=a+b
+  if(c<=50):
+    print(c)'''
+
+#print fizz and buzz
+'''for i in range(51):
+  if(i%3==0 and i%5==0):
+    print("FizzBuzz")
+  elif(i%3==0):
+    print("fizz")
+  elif(i%5==0):
+    print("buzz")
+  else:  
+    print(i)
+'''
+#print matrix
+'''r=input("Enter the Number of rows:")
+c=input("Enter the number of columns:")
+for i in range(int(r)):
+    for j in range(int(c)):
+        print(i*j,",",end='')
+    print()'''
+
+#take line and print
+'''lines=[]
+while True:
+    l=input("Enter a Line:")
+    if(l==""):
+        break
+    lines.append(l)
+for i in lines:
+    print(i.lower())
+'''
+
+#print divisible of 5 
+'''str=[]
+for i in range(6):
+    n=input("Enetr the Number in Binary:")
+    str.append(n)
+for j in str:
+    if(int(j,2)%5==0):
+        print(int(j))'''
+
+#count digits or letters
+    
+'''n=input("Enter a String:")
+l=d=0
+for i in n:
+    if((i>='a' and i<='z') or (i>='A' and i<='Z')):
+        l+=1
+    elif(i>='0' and i<='9'):
+        d+=1
+print("Digits are:",d)
+print("Letters are",l)'''
+
+
+#print valid or invalid password
+'''n=input("Enter your Password:")
+if(len(n)<6 or len(n)>16):
+    ans=False
+    print("Invalid Password...")
+    exit()
+l=u=d=s=False
+for i in n:
+    if(i.islower()): 
+        l=True
+    elif(i.isupper()):
+        u=True
+    elif(i.isdigit()):
+        d=True
+    elif(i in ['$','@','#']):
+        s=True   
+if(l and u and d and s):
+    print("Valid Password!!!")
+else:
+    print("Invalid Password...")'''

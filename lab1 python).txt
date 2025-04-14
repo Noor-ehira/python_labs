@@ -1,0 +1,70 @@
+LAB-1 ..................PYTHON (AI)
+
+print("hello world")
+
+#print on individual lines
+print("statement 1")
+print("statement 2")
+
+#print in a single line
+print("statement 1");print("statement 2")
+
+#Check indentation
+x=1
+if x>0:
+ print("this is a statement having indentation")
+ 
+ #check datatype
+x="noor"
+print(type(x))
+
+x=10
+print(type(x))
+print(x)
+
+y=1+3j
+print(type(y))
+
+z=True
+print(type(z))
+
+#print string
+string1="noor"
+print(string1[0])
+print(string1[1])
+print(string1[2])
+print(string1[3])
+
+#taking input
+x=input("enter a number")
+print(x)
+ 
+#print the list
+my_list=[2,4,5.6,2]
+print(my_list)
+
+isba_list=[3,5,"noor",2.5]
+print(isba_list)
+
+#print indexes
+color_list=["green","red","yellow"]
+print(color_list[0])
+print(color_list[-1])
+print(color_list[1])
+print(color_list[2])
+print(color_list[-2])
+
+#if condition
+x=15
+y=10
+if x>y:
+    print("x is greater than y")
+
+#if-else condition
+x=15
+y=10
+if x<y:
+    print("x is greater than y")
+else:
+    print("Error")    
+

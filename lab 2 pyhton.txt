@@ -1,0 +1,74 @@
+LAB 2...........PYTHON(AI)
+
+#While loop
+count=0
+while(count<3):
+    count=count+1
+    print(count)
+    print("NOOR")
+    
+#print list    
+isba=["zarin","noor","ifra"]    
+print(isba)
+for i in isba:
+     print(i)
+     
+     
+#print tuple     
+tuple=(2,4,"noor")
+print(tuple)
+for i in tuple:
+      print(i)
+      
+#print a string
+n="hira"     
+print(n)
+for i in n:
+    print(i)
+    
+#print within range    
+n="zartasha"     
+print(n)
+for i in range(len(n)):
+    print(n[i])    
+    
+#print list with range
+list=[3,5.6,"isba",0.5]    
+for i in range(len(list)):
+    print(list[i])
+    
+#functions
+def my_function(): 
+    print("Hello from a function")
+my_function()
+
+#Information  passed to functions as parameter.
+def my_function(fname):
+    print(fname + "read")
+my_function("right")    
+my_function("left")
+my_function("upper")
+
+def func(name,age,add="norway"):
+    print("This is a Function and The information is:")
+    print(f"{name} is of age {age} and lives in {add}")
+func("noor",10,"GRW")
+print("\n")
+func("ifra ",29)
+
+#list as a parameter
+def func(food):
+    for x in food:
+        print(x)
+foods=["beans","vegetables","rice","beef","chicken"]
+func(foods)
+
+#return values
+def func(x):
+    return x*3
+print(func(3))
+print(func(5))
+print(func(6))
+
+
+    
