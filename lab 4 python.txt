@@ -1,0 +1,94 @@
+LAB-4 ..................PYTHON (AI)
+
+#using python
+class stack:
+    def _init_(self):
+        self.l=[]
+    def push(self,ele):
+        self.l.append(ele)
+    def peek(self):
+        return self.l[-1]
+    def size(self):
+        return len(self.l)
+    def is_empty(self):
+        if(len(self.l)==0):
+            return True
+        return False
+    def pop(self):
+        if(self.is_empty()):
+            return "The Stack is Empty..."
+        return self.l.pop()
+    def _str_(self):
+        return str(self.l)
+s=stack()
+s.push(10)
+s.push(20)
+s.push(30)
+print(s)
+print(s.peek())
+s.pop()
+s.pop()
+print(s)
+s.push(100)
+print(s)
+print(s.size())
+print(s.pop())
+print(s.pop())
+print(s.pop())
+print(s)
+
+
+#using python class queue
+class queue:
+    def _init_(self):
+        self.l=[]
+    def enque(self,ele):
+        self.l.append(ele)
+    def size(self):
+        return len(self.l)
+    def is_empty(self):
+        if(len(self.l)==0):
+            return True
+        return False
+    def pop(self):
+        if(self.is_empty()):
+            return "QUEUE IS EMPTY..."
+        return self.l.pop(0)
+    def _str_(self):
+        return str(self.l)
+q=queue()
+q.enque(10)
+q.enque(20)
+q.enque(30)
+q.enque(40)
+print(q)
+q.pop()
+q.pop()
+q.pop()
+print(q.size())
+print(q)
+q.enque(100)
+print(q)
+q.pop()
+print(q.pop())
+print(q.pop())
+print(q)
+
+
+#binary search
+array=[]
+for i in range(5):
+    n=input("enter a number:")
+    array.append(n)
+s=0;e=4
+num=input("enter number to search:")
+while(s<=e):
+    mid=(s+e)//2 
+    if(array[mid]==num):
+         print("FOUND")
+         exit()
+    elif(num<array[mid]):
+        e=mid-1
+    elif(num>array[mid]):
+        s=mid+1
+print("NOT FOUND")
